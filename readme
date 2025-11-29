@@ -1,0 +1,11 @@
+As I detest gamification, I will cheat a highscore and be done with GH's social media aspects. This script will spam commits to populate your profile's contribution grasph.
+
+- choose target date and number of comits
+- generate file or modification
+- back commit it
+
+git commit --date "10 day ago" -m "Your commit message" 
+If it's the last commit, or a range of commits, then add:
+git rebase --committer-date-is-author-date <ref> where <ref> is the last commit/branch/tag/
+output after comiting looks like: [master 47ffff4] test0
+you want the 47fffff4 as ref!
